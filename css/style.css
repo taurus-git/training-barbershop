@@ -1,0 +1,330 @@
+@font-face {
+	font-family: "PTSansNarrowRegular";
+	src: url("../fonts/PTSansNarrow/PTSansNarrow.eot");
+	src: url("../fonts/PTSansNarrow/PTSansNarrow.eot?#iefix")format("embedded-opentype"),
+		 url("../fonts/PTSansNarrow/PTSansNarrow.woff") format("woff"),
+		 url("../fonts/PTSansNarrow/PTSansNarrow.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+	}
+
+@font-face {
+	font-family: "PTSansNarrowBold";
+	src: url("../fonts/PTSansNarrow/PTSansNarrowBold.eot");
+	src: url("../fonts/PTSansNarrow/PTSansNarrowBold.eot?#iefix")format("embedded-opentype"),
+		 url("../fonts/PTSansNarrow/PTSansNarrowBold.woff") format("woff"),
+		 url("../fonts/PTSansNarrow/PTSansNarrowBold.ttf") format("truetype");
+	font-style: bold;
+	font-weight: normal;
+	}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+ul{
+	display: inline-block;
+	list-style: none; /*убираем маркеры списка*/
+	padding: 0; /*padding-left: 0; убираем левый отступ, равный 40px*/
+	margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+}
+li{
+	display: inline;/*для того, чтобы центрировать надписи в элементах списка по горизонтали*/
+}
+html, body{
+	position: relative;
+	height: 100%;
+}
+body{
+	text-align: center;
+	font-family: "PTSansNarrowBold", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	background-image: url('../images/optimized/barbershop-index-background.jpg');
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-position-x: center;
+}
+/* style of buttons start */
+a.button{
+	color: #fff;
+	display: inline-block;
+    position: relative;
+    width: 139px;
+    height: 44px;
+    top: 8px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #000;
+}
+a.button:hover{
+	background-color: #663d15;
+	cursor: pointer;
+}
+a.button:active{
+	background-color: #663d15;
+}
+input[type=button], [type=submit]{
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	background-color: #000;
+	cursor: pointer;
+	border: none;
+}
+input[type=button]:hover{
+	background-color: #663d15;
+}
+input[type=button]:active{
+	background-color: #663d15;
+}
+input[type=submit]:hover{
+	background-color: #663d15;
+}
+input[type=submit]:active{
+	background-color: #663d15;
+}
+input[type=button]{
+	width: 140px;
+	height: 44px;
+}
+input[type=submit]{
+	width: 300px;
+	height: 44px;
+}
+input, textarea{
+	text-align: center;
+	font-family: "PTSansNarrowBold", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+/* style of buttons end */
+/* 14px 24px - обычный текст, большинство
+16px 20px - Быстро, дорого
+30px 42px - новости */
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+/* header */
+header{
+	margin-bottom: 62px;
+	background-color: #000;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+}
+header a{
+	color: #fff;
+}
+header nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+header a{
+	padding-top: 25px;
+	padding-right: 20px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+}
+header a:hover{
+	background-color: #242424;
+}
+header a:active{
+	background-color: #242424;
+}
+header ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.login-container, .header-menu li{
+	padding-top: 25px;
+	padding-right: 0;
+	padding-bottom: 25px;
+	padding-left: 0;
+}
+.login-container a::before{
+	content: url("../images/icon-login.png");
+	position: relative;
+	top: 2px;
+	height: 30px;
+	left: -15px;
+	padding-left: 20px;
+}
+/* main block */
+.logo{
+	max-width: 368px;
+	height: 204px;	
+	margin-right: auto;
+	margin-bottom: 21px;
+	margin-left: auto;
+	background-image: url("../images/Logo.png");
+	background-repeat: no-repeat;
+}
+/* promo-blocks */
+.promo-blocks{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 77px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+.promo-block-item{
+	position: relative;
+	max-width: 295px;
+	margin-right: 16px;
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+.promo-block-item::before{
+	content: "";
+	position: absolute;
+	height: 21px;
+	width: 21px;
+	top: 52px;
+	right: 138px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+.promo-block-item:first-child{
+	margin-left: 0;
+}
+.promo-block-item:last-child{
+	margin-right: 0;
+}
+.promo-block-title{
+	font-size: 30px;
+	line-height: 42px;
+	font-style: normal;
+	margin-bottom: 60px;
+}
+/* section */
+.info, .contacts{
+	min-height: 420px;
+	background-image: url(../images/info-background.jpg);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 46px;
+	padding-right: 70px;
+	padding-bottom: 50px;
+	padding-left: 70px;
+	text-align: left;
+}
+.info{
+	margin-bottom: 35px;
+}
+.info h3{
+	font-size: 30px;
+	line-height: 42px;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 19px;
+}
+.info-item{
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+}
+.info-item:last-child{
+	padding-left: 90px;
+}
+.news-date{
+	font-size: 14px;
+	text-transform: none;
+	margin-bottom: 21px;
+}
+.photogallery{
+    webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: -10px 0 6px -6px #777;
+} 
+.photogallery h3{
+	margin-bottom: 28px;
+}     
+.photogallery div{
+	height: 180px;
+	margin-bottom: 29px;
+}
+.info-item.photogallery input{
+	display: inline-block;
+	position: relative;
+}
+.photogallery input:last-child{
+	margin-left: 16px;
+}
+/* second-section, contacts */
+.contacts{
+	margin-bottom: 65px;
+}
+.contacts h3{
+	font-size: 30px;
+	line-height: 42px;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 18px;
+}
+.contacts p{
+	margin-bottom: 20px;
+}
+.contact-information a{
+	top: 3px;
+}
+.contact-information a:last-child{
+	left: 18px;
+}
+.enroll form{
+	position: relative;
+	min-height: 170px;
+}
+.enroll input{
+	display: inline-block;
+	color: #000;
+}
+.enroll{
+    webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: -10px 0 6px -6px #777;
+}
+.info-item.enroll input:not([type=submit]){
+	position: relative;
+	width: 140px;
+	height: 42px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+.info-item.enroll input[type=submit]{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;	
+}
