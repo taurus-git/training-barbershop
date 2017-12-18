@@ -172,6 +172,9 @@ header ul{
 	left: -15px;
 	padding-left: 20px;
 }
+.login-form{
+	display: none;
+}
 /* main block */
 .logo{
 	max-width: 368px;
