@@ -42,9 +42,9 @@ html, body{
 body{
 	text-align: center;
 	font-family: "PTSansNarrowBold", sans-serif;
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: normal;
-	line-height: 24px;
+	line-height: 1.7143rem;
 	color: #000;
 	margin: 0;
 	padding: 0;
@@ -54,6 +54,7 @@ body{
 	background-color: #000;
 	background-position-x: center;
 }
+/* 14px = 1rem */
 /* style of buttons start */
 a.button{
 	color: #fff;
@@ -62,7 +63,7 @@ a.button{
     width: 139px;
     height: 44px;
     top: 8px;
-    line-height: 44px;
+    line-height: 3.1429rem;
     text-align: center;
     background-color: #000;
 }
@@ -75,9 +76,9 @@ a.button:active{
 }
 input[type=button], [type=submit]{
 	color: #fff;
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: normal;
-	line-height: 24px;
+	line-height: 1.7143rem;
 	background-color: #000;
 	cursor: pointer;
 	border: none;
@@ -105,16 +106,16 @@ input[type=submit]{
 input, textarea{
 	text-align: center;
 	font-family: "PTSansNarrowBold", sans-serif;
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: normal;
-	line-height: 24px;
+	line-height: 1.7143rem;
 	color: #fff;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 }
 /* style of buttons end */
-/* 14px 24px - обычный текст, большинство
+/* 14px 1.7143rem - обычный текст, большинство
 16px 20px - Быстро, дорого
 30px 42px - новости */
 .container{
@@ -129,8 +130,8 @@ input, textarea{
 header{
 	margin-bottom: 62px;
 	background-color: #000;
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 1.1429rem;
+	line-height: 1.4286rem;
 	color: #fff;
 }
 header a{
@@ -194,7 +195,7 @@ header ul{
 	margin-bottom: 77px;
 	color: #fff;
 	text-align: center;
-	font-size: 14px;
+	font-size: 1rem;
 }
 .promo-block-item{
 	position: relative;
@@ -220,8 +221,8 @@ header ul{
 	margin-right: 0;
 }
 .promo-block-title{
-	font-size: 30px;
-	line-height: 42px;
+	font-size: 2.1429rem;
+	line-height: 3rem;
 	font-style: normal;
 	margin-bottom: 60px;
 }
@@ -242,8 +243,8 @@ header ul{
 	margin-bottom: 35px;
 }
 .info h3{
-	font-size: 30px;
-	line-height: 42px;
+	font-size: 2.1429rem;
+	line-height: 3rem;
 	text-align: left;
 	font-weight: normal;
 	margin-bottom: 19px;
@@ -258,7 +259,7 @@ header ul{
 	padding-left: 90px;
 }
 .news-date{
-	font-size: 14px;
+	font-size: 1rem;
 	text-transform: none;
 	margin-bottom: 21px;
 }
@@ -286,8 +287,8 @@ header ul{
 	margin-bottom: 65px;
 }
 .contacts h3{
-	font-size: 30px;
-	line-height: 42px;
+	font-size: 2.1429rem;
+	line-height: 3rem;
 	text-align: left;
 	font-weight: normal;
 	margin-bottom: 18px;
