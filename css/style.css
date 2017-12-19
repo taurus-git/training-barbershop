@@ -148,17 +148,10 @@ header a:hover{
 header a:active{
 	background-color: #242424;
 }
-header ul li{
+.header-menu li{
 	display: inline-block;
-}
-header ul li a{
-	margin-right: -0.4rem;
-}
-.login-container, .header-menu li{
-	padding-top: 25px;
-	padding-right: 0;
-	padding-bottom: 25px;
-	padding-left: 0;
+	margin-left: -0.36rem;
+	white-space: nowrap;
 }
 .login-container a::before{
 	content: url("../images/icon-login.png");
