@@ -128,19 +128,20 @@ input, textarea{
 }
 /* header */
 header{
+	height: 72px;
 	margin-bottom: 62px;
 	background-color: #000;
-	font-size: 1.1429rem;
-	line-height: 1.4286rem;
+	font-size: 0.9429rem;
+	line-height: 0.9429rem;
 	color: #fff;
 }
 header a{
 	display: block;
-	color: #fff;
-	padding-top: 25px;
-	padding-right: 20px;
-	padding-bottom: 25px;
-	padding-left: 20px;
+    color: #fff;
+    padding-top: 28px;
+    padding-right: 22px;
+    padding-bottom: 30px;
+    padding-left: 22px;
 }
 header a:hover{
 	background-color: #242424;
@@ -148,10 +149,26 @@ header a:hover{
 header a:active{
 	background-color: #242424;
 }
+.header-menu{
+	float: left;
+}
 .header-menu li{
 	display: inline-block;
-	margin-left: -0.36rem;
+	margin-left: -0.2rem;
 	white-space: nowrap;
+}
+.header-menu li:first-child{
+	margin-left: 0;
+}
+.header-menu + input{
+	float: right;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 .login-container a::before{
 	content: url("../images/icon-login.png");
