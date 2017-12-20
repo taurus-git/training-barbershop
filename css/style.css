@@ -162,6 +162,15 @@ header a:active{
 }
 .header-menu + input{
 	float: right;
+	width: 107px;
+	height: 72px;
+	padding: 22px 20px 24px 51px;
+}
+.header-menu + input[value]{
+	position: relative;
+	background-image: url("../images/icon-login.png");
+	background-repeat: no-repeat;
+	background-position: 19px 28px;
 }
 .clearfix::after{
 	content: "";
@@ -169,14 +178,6 @@ header a:active{
 	height: 0;
 	clear: both;
 	visibility: hidden;
-}
-.login-container a::before{
-	content: url("../images/icon-login.png");
-	position: relative;
-	top: 2px;
-	height: 30px;
-	left: -15px;
-	padding-left: 20px;
 }
 .login-form{
 	display: none;
