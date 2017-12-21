@@ -354,16 +354,27 @@ header input[type=button]{
 }
 /* footer */
 footer {
-	font-size: 0.9rem;
+	font-size: 0;
 	color: #fff;
-	text-align: left;
 }
 footer a{
-	color: #fff
+	color: #fff;
+}
+footer .search-on-map{
+	border-bottom: 1px solid #fff;
 }
 .footer-item{
 	display: inline-block;
 	vertical-align: top;
+	width: 33.3%;
+	font-size: 0.8rem;
 }
-
-
+footer .adress{
+	text-align: left;
+}
+footer .developer{
+	text-align: right;
+}
+.vk{
+	
+}
