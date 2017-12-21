@@ -131,8 +131,8 @@ header{
 	height: 72px;
 	margin-bottom: 60px;
 	background-color: #000;
-	font-size: 0.9429rem;
-	line-height: 0.9429rem;
+	font-size: 1rem;
+	line-height: 1rem;
 	color: #fff;
 }
 header a{
@@ -148,6 +148,9 @@ header a:hover{
 }
 header a:active{
 	background-color: #242424;
+}
+header input[type=button]{
+	font-size: 1rem;
 }
 .header-menu{
 	float: left;
@@ -295,7 +298,7 @@ header a:active{
 }
 /* second-section, contacts */
 .contacts{
-	margin-bottom: 65px;
+	margin-bottom: 120px;
 }
 .contacts h3{
 	font-size: 1.8429rem;
@@ -349,3 +352,18 @@ header a:active{
 	left: 0;
 	color: #fff;	
 }
+/* footer */
+footer {
+	font-size: 0.9rem;
+	color: #fff;
+	text-align: left;
+}
+footer a{
+	color: #fff
+}
+.footer-item{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
