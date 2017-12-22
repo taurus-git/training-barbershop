@@ -375,6 +375,13 @@ footer .adress{
 footer .developer{
 	text-align: right;
 }
+.social-links object{
+	width: 25px;
+	pointer-events: none;
+}
 .vk{
-	
+	padding: 15px;
+}
+object svg path{
+	fill: #fff;
 }
