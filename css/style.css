@@ -115,9 +115,6 @@ input, textarea{
 	text-transform: uppercase;
 }
 /* style of buttons end */
-/* 14px - обычный текст, большинство
-16px 20px - Быстро, дорого
-30px 42px - новости */
 .container{
 	max-width: 960px;
 	margin: 0 auto;
@@ -133,6 +130,7 @@ header{
 	background-color: #000;
 	font-size: 1rem;
 	line-height: 1rem;
+	text-align: left;
 	color: #fff;
 }
 header a{
@@ -152,8 +150,11 @@ header a:active{
 header input[type=button]{
 	font-size: 1rem;
 }
-.header-menu{
-	float: left;
+.login-container{
+	margin-left: 266px;
+}
+header input.login-container:hover{
+	background-color: #242424;
 }
 .header-menu li{
 	display: inline-block;
@@ -164,23 +165,14 @@ header input[type=button]{
 	margin-left: 0;
 }
 .header-menu + input{
-	float: right;
 	width: 107px;
 	height: 72px;
 	padding: 22px 20px 24px 51px;
 }
 .header-menu + input[value]{
-	position: relative;
 	background-image: url("../images/icon-login.png");
 	background-repeat: no-repeat;
 	background-position: 19px 28px;
-}
-.clearfix::after{
-	content: "";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
 }
 .login-form{
 	display: none;
