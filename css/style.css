@@ -54,7 +54,6 @@ body{
 	background-color: #000;
 	background-position-x: center;
 }
-/* 14px = 1rem */
 /* style of buttons start */
 a.button{
 	font-size: 0.8rem;
@@ -151,7 +150,7 @@ header input[type=button]{
 	font-size: 1rem;
 }
 .login-container{
-	margin-left: 266px;
+	margin-left: 166px;
 }
 header input.login-container:hover{
 	background-color: #242424;
@@ -178,6 +177,9 @@ header input.login-container:hover{
 	display: none;
 }
 /* main block */
+main{
+	margin-bottom: 75px;
+}
 .logo{
 	max-width: 368px;
 	height: 204px;	
@@ -189,29 +191,27 @@ header input.login-container:hover{
 }
 /* promo-blocks */
 .promo-blocks{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-bottom: 79px;
 	color: #fff;
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 0;
 }
 .promo-block-item{
+	display: inline-block;
 	position: relative;
+	width: 33.3%;
 	max-width: 295px;
 	margin-right: 13px;
 	margin-bottom: 0;
 	margin-left: 13px;
+	font-size: 0.8rem;
 }
 .promo-block-item::before{
 	content: "";
 	position: absolute;
 	height: 21px;
 	width: 21px;
-	top: 55px;
-	right: 138px;
+	top: 32%;
+	right: 46%;
 	background-color: #fff;
 	transform: rotate(45deg);
 }
@@ -231,16 +231,20 @@ header input.login-container:hover{
 .info, .contacts{
 	min-height: 400px;
 	background-image: url(../images/info-background.jpg);
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	background-color: #fffefe;
 	padding-top: 42px;
 	padding-right: 70px;
 	padding-bottom: 50px;
 	padding-left: 70px;
 	text-align: left;
+	font-size: 0;
+}
+.info-item{
+	display: inline-block;
+	vertical-align: top
 }
 .info{
+	position: relative;
 	margin-bottom: 35px;
 }
 .info h3{
@@ -248,24 +252,28 @@ header input.login-container:hover{
 	line-height: 3rem;
 	text-align: left;
 	font-weight: normal;
-	margin-bottom: 19px;
+}
+.info-item.news h3{
+	margin-bottom: 14px;
 }
 .info-item{
 	width: 50%;
 	padding-left: 10px;
 	padding-right: 10px;
-	position: relative;
+	font-size: 0.8rem;
 }
 .info-item:last-child{
 	padding-left: 90px;
 }
 .news-date{
-	font-size: 1rem;
+	font-size: 0.8rem;
 	text-transform: none;
 	margin-bottom: 21px;
 }
 .button.all-news{
-	bottom: -28px;
+	position: absolute;
+	left: 70px;
+    bottom: 50px;
 }
 .photogallery{
     webkit-box-shadow: 0 10px 6px -6px #777;
