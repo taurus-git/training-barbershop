@@ -94,6 +94,16 @@ input[type=submit]:hover{
 input[type=submit]:active{
 	background-color: #663d15;
 }
+input:focus { 
+    outline: none !important;
+    border: 1px solid #663d15;
+    box-shadow: 0 0 10px #663d15;
+}
+textarea:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
 input[type=button]{
 	width: 140px;
 	height: 44px;
