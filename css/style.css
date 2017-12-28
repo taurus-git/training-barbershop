@@ -160,7 +160,7 @@ header input[type=button]{
 	font-size: 1rem;
 }
 .login-container{
-	margin-left: 166px;
+	margin-left: 260px;
 }
 header input.login-container:hover{
 	background-color: #242424;
@@ -282,7 +282,7 @@ main{
 }
 .button.all-news{
 	position: absolute;
-	left: 70px;
+	left: 80px;
     bottom: 50px;
 }
 .photogallery{
