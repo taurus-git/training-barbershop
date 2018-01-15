@@ -183,8 +183,22 @@ header input.login-container:hover{
 	background-repeat: no-repeat;
 	background-position: 19px 28px;
 }
+/* modal window */
 .login-form{
-	display: none;
+	background: #fff;
+    left: 50%;
+    margin: -250px 0 0 -40%;
+    position: absolute;
+    top: -50%;
+    width: 460px;
+    height: 385px;
+}
+/* Активация модального окна в состоянии :target */
+.login-form:target {
+    top: 50%;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 /* main block */
 main{
