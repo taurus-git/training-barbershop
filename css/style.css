@@ -196,12 +196,21 @@ header input.login-container:hover{
     padding: 50px 80px 10px;
     text-align: left;
 }
+.login-form form{
+	position: relative;
+}
 .login-form-title{
 	font-size: 30px;
 	margin-bottom: 25px;
 }
 .login-form-description{
 	margin-bottom: 15px;
+}
+.close{
+	position: absolute;
+	top: -130px;
+    right: -62px;
+    z-index: 999;
 }
 .login-form input[type="text"],
 .login-form input[type="password"]{
@@ -220,9 +229,24 @@ header input.login-container:hover{
 }
 .login-form input[type="text"]{
 	margin-bottom: 9px;
+	background-image: url(../images/optimized/User.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
 }
 .login-form input[type="password"]{
 	margin-bottom: 15px;
+	background-image: url(../images/optimized/Locked.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+.forgot-password{
+	position: absolute;
+    right: 0;
+	border-bottom: 1px solid #7d7c7a;
+}
+.login-form input[type="submit"]{
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 /* Активация модального окна в состоянии :target */
 .login-form:target {
