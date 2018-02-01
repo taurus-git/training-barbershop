@@ -134,7 +134,7 @@ input, textarea{
 }
 /* header */
 header{
-	height: 72px;
+	min-height: 72px;
 	margin-bottom: 60px;
 	background-color: #000;
 	font-size: 1rem;
@@ -143,11 +143,11 @@ header{
 	color: #fff;
 }
 header a{
-	display: inline-block;;
+	display: inline-block;
     color: #fff;
     padding-top: 28px;
     padding-right: 22px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     padding-left: 22px;
 }
 header a:hover{
@@ -160,7 +160,30 @@ header input[type=button]{
 	font-size: 1rem;
 }
 .login-container{
-	margin-left: 260px;
+	float: right;
+	position: relative;
+	max-width: 140px;
+	padding-left: 50px;
+}
+.login-container::before{
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 10px;
+	width: 18px;
+	height: 18px;
+	opacity: 0.3;
+	background-image: url("../images/icon-login.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.login-container:hover::before{
+	opacity: 1;
+}
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
 }
 header input.login-container:hover{
 	background-color: #242424;
@@ -178,20 +201,35 @@ header input.login-container:hover{
 	height: 72px;
 	padding: 22px 20px 24px 51px;
 }
-.header-menu + input[value]{
-	background-image: url("../images/icon-login.png");
-	background-repeat: no-repeat;
-	background-position: 19px 28px;
-}
 /* modal window */
+/*modal overlay dosent working
+.modal-overlay{
+	z-index: 20;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.25)
+}*/
+.modal-close{
+	position: absolute;
+    right: -30px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+	background-image: url(../images/gray-cross-90.svg);
+	background-repeat: no-repeat;
+}
 .login-form{
 	position: fixed;
+	z-index: 999;
     top: -50%;
     left: 50%;
     width: 460px;
     height: 385px;
     transform: translate(-50%, -50%);
-    z-index: 999;
     background: #fff;
     padding: 50px 80px 10px;
     text-align: left;
@@ -219,7 +257,7 @@ header input.login-container:hover{
 	border: 2px solid #000;
 	color: #000;
 	text-align: left;
-	padding: 0 15px;
+	padding: 0 45px 0 15px;
 }
 .login-form input[type="text"]:focus{
 	border-color: #663d15;
@@ -260,10 +298,9 @@ header input.login-container:hover{
     border: 2px solid #000;
 }
 .remember-me-input:checked + label:before {
-	background-image: url(../images/cross.svg);
-
+	background-image: url(../images/black-cross-80.svg);
+	background-repeat: no-repeat;
 }
-
 .forgot-password{
 	position: absolute;
     right: 0;
