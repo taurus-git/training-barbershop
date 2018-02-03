@@ -24,21 +24,23 @@
         </nav>
     </header>
     <!-- modal window  -->
-    	<div class="modal-overlay clearfix"></div>
-        <div class="login-form" id="enter-form">
-        	<a href="#close" title="Закрыть" class="modal-close"></a>
-        	<h3 class="login-form-title">Личный кабинет</h3>
-            	<p class="login-form-description">Введите, пожалуйста, свой логин и пароль</p>
-            	<form action="#" method="post">
-            		<input type="text" name="login" id="login" placeholder="логин" required>
-                	<input type="password" name="password" id="password" placeholder="пароль" required>
-                	<input type="checkbox" class="remember-me-input" name="checkbox" id="remember-me">
-                	<label for="remember-me">
-                		<span class="remember-me">Запомните меня</span></label>
-                	<a href="#" class="forgot-password">Я забыл пароль!</a>
-                	<input type="submit" name="enter" value="Войти">
-            	</form>
-        </div>
+    <div id="enter-form" class="modal-block clearfix">
+    	<div class="login-form">
+    		<a href="#close" title="Закрыть" class="modal-close"></a>
+    		<h3 class="login-form-title">Личный кабинет</h3>
+    		<p class="login-form-description">Введите, пожалуйста, свой логин и пароль</p>
+    		<form action="#" method="post">
+    			<input type="text" name="login" id="login" placeholder="логин" required>
+    			<input type="password" name="password" id="password" placeholder="пароль" required>
+    			<input type="checkbox" class="remember-me-input" name="checkbox" id="remember-me">
+    			<label for="remember-me">
+    				<span class="remember-me">Запомните меня</span>
+    			</label>
+    			<a href="#" class="forgot-password">Я забыл пароль!</a>
+    			<input type="submit" name="enter" value="Войти">
+    		</form>
+    	</div>
+    </div>
         <!-- main content -->
         <div class="container clearfix">    
             <main>
@@ -119,10 +121,16 @@
                 <article>
                     <p>Барбершоп «Бородинский»<br> 
                         Адрес: г. Санкт-Петербург, Б. Конюшенная, д.19/8<br>
-                        <a class="search-on-map" href=#>Как нас найти?</a><br>
-                        Телефон:<a href="tel:+74956660266">+7(495)6660266</a>
+                        <a class="search-on-map" href="#modal-map">Как нас найти?</a><br>
+                        Телефон:<a href="tel:+74956660266">+7 (495) 666 02 66</a>
                     </p>
-                </article>
+					<div class="modal" id="modal-map">
+                    	<div class="modal-map" id="footer-modal-map">
+							<a href="#close" title="Закрыть" class="modal-map-close"></a>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6086840919036!2d30.320552566314305!3d59.938635231876226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQkNCd0JrQoi3Qn9CV0KLQldCg0JHQo9Cg0JMsINCRLiDQmtCe0J3QrtCo0JXQndCd0JDQrywg0JQuMTkvOA!5e0!3m2!1sru!2sua!4v1517662779428" width="767px" height="561px" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+                    </div>
+				</article>
             	</div>
             	<div class="footer-item social-block">
                     <div>
