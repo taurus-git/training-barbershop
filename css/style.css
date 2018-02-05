@@ -407,7 +407,7 @@ main{
 	margin-bottom: 14px;
 }
 .info-item{
-	width: 50%;
+	max-width: 50%;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 0.8rem;
@@ -504,7 +504,7 @@ main{
 }
 /* footer */
 footer {
-	height: 193px;
+	max-height: 193px;
 	font-size: 0;
 	line-height: 193px;
 	color: #fff;
@@ -608,3 +608,94 @@ footer .developer p{
 	background-color: #fff;
 	color: #000;
 }
+/* media */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.info, .contacts{
+		padding: 20px;
+	}
+	.info-item:last-child {
+    	padding-left: 30px;
+    }	
+    .info input[type=button]{
+	width: 135px;
+	}
+	input[type=button]{
+	width: 100%;
+	margin-bottom: 10px;
+	}
+	.info-item.enroll input[type=submit] {
+    position: static;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	header{
+		min-height: 40px;
+		margin-bottom: 10px;
+	}
+	header nav{
+		display: none;
+	}
+	main{
+		margin-bottom: 10px;
+	}
+	.logo{
+		display: none;
+	}
+	.promo-block-item{
+		width: 90%;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.promo-block-item:first-child {
+        margin-left: 0;
+    }
+	.promo-block-title{
+		margin-bottom: 25px;
+	}
+	.promo-block-item::before{
+		top: 37%;
+		right: 48%;
+	}
+	.button.all-news {
+    	position: static;
+	}
+	.info, .contacts{
+		padding: 20px;
+	}
+	.info-item{
+		max-width: 90%;
+		padding: 0;
+	}
+	.info-item:last-child {
+    	padding-left: 0;
+    }	
+    .photogallery{
+    	box-shadow: none;
+    }
+    .enroll {
+    	box-shadow: none;
+    }
+    .info input[type=button]{
+		width: 135px;
+	}
+	input[type=button]{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.info-item.enroll input[type=submit] {
+    	position: static;
+	}
+	.contacts{
+		margin-bottom: 10px;
+	}
+	.footer-item.adress{
+		display: block;
+		width: 45%;
+		margin: 10px;
+	}
+}	
+@media (min-width: 320px) and (max-width: 479px){
+
+}
+
+@media (min-width: 240px) and (max-width: 319px)
