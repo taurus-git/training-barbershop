@@ -610,6 +610,14 @@ footer .developer p{
 }
 /* media */
 @media (min-width: 768px) and (max-width: 1024px) {
+	.modal-block .login-form{
+		width: 50%;
+    	height: auto;
+    	padding: 10px;
+	}
+	.login-form input[type=submit]{
+		width: 100%;
+	}
 	.info, .contacts{
 		padding: 20px;
 	}
@@ -617,17 +625,41 @@ footer .developer p{
     	padding-left: 30px;
     }	
     .info input[type=button]{
-	width: 135px;
+		width: 135px;
 	}
 	input[type=button]{
-	width: 100%;
-	margin-bottom: 10px;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 	.info-item.enroll input[type=submit] {
-    position: static;
+    	position: static;
+	}
+	.modal-map {
+		width: 80%;
+    	height: 70%;
+    	overflow: hidden;
+	}
+	.modal-map-close{
+		z-index: 9999;
+		right: 0px;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px){
+	.modal-block .login-form{
+		width: 80%;
+    	height: auto;
+    	padding: 10px;
+	}
+	.login-form input[type=submit]{
+		width: 100%;
+	}
+	.remember-me-input + label {
+    	display: block;
+    	margin-bottom: 10px;
+	}
+	.login-form a.forgot-password{
+		position: static;
+	}
 	header{
 		min-height: 40px;
 		margin-bottom: 10px;
@@ -657,14 +689,22 @@ footer .developer p{
 		right: 48%;
 	}
 	.button.all-news {
-    	position: static;
+    	position: relative;
+    	top: 0;
+    	left: calc(50% - 139px / 2);
 	}
 	.info, .contacts{
 		padding: 20px;
 	}
 	.info-item{
+		display: block;
 		max-width: 90%;
 		padding: 0;
+		margin: 0 auto;
+    	text-align: center;
+	}
+	.info-item h3{
+		text-align: center;
 	}
 	.info-item:last-child {
     	padding-left: 0;
@@ -674,6 +714,23 @@ footer .developer p{
     }
     .enroll {
     	box-shadow: none;
+    }
+    .enroll form{
+    	min-height: 0;
+    }
+    .enroll form input{
+    	display: inline-block;
+    	margin: 0;
+    	width: 50%;
+    }
+	.info-item.enroll input:not([type=submit]){
+		width: 45%;
+	}
+    .info-item.enroll input:not([type=submit]):nth-child(odd){
+    	margin: 0 0 10px;
+    }
+    .info-item.enroll input:not([type=submit]):nth-child(even){
+    	margin: 0 0 10px;
     }
     .info input[type=button]{
 		width: 135px;
@@ -688,14 +745,153 @@ footer .developer p{
 	.contacts{
 		margin-bottom: 10px;
 	}
-	.footer-item.adress{
-		display: block;
-		width: 45%;
-		margin: 10px;
+	footer{
+		line-height: 1rem;
+	}
+	.footer-item{
+		display: inline-block;
+		width: 30%;
+		padding: 10px;
+	}
+	.modal-map {
+		width: 80%;
+    	height: 70%;
+    	overflow: hidden;
+	}
+	.modal-map-close{
+		z-index: 9999;
+		right: 0px;
 	}
 }	
-@media (min-width: 320px) and (max-width: 479px){
-
+@media (max-width: 479px){
+	body{
+		background-image: none;
+	}
+	.modal-block .login-form{
+		width: 70%;
+    	height: auto;
+    	padding: 10px;
+	}
+	.login-form input[type=submit]{
+		width: 100%;
+	}
+	.remember-me-input + label {
+    	display: block;
+    	margin-bottom: 10px;
+	}
+	.login-form a.forgot-password{
+		position: static;
+	}
+	header{
+		min-height: 40px;
+		margin-bottom: 10px;
+		background-color: #663d15;
+	}
+	header nav{
+		display: none;
+	}
+	main{
+		margin-bottom: 10px;
+	}
+	.logo{
+		display: none;
+	}
+	.promo-block-item{
+		width: 90%;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.promo-block-item:first-child {
+        margin-left: 0;
+    }
+	.promo-block-title{
+		margin-bottom: 25px;
+	}
+	.promo-block-item::before{
+		top: 37%;
+		right: 48%;
+	}
+	.button.all-news {
+    	position: relative;
+    	top: 0;
+    	left: calc(50% - 139px / 2);
+	}
+	.info, .contacts{
+		padding: 20px;
+	}
+	.info-item{
+		display: block;
+		max-width: 90%;
+		padding: 0;
+		margin: 0 auto;
+    	text-align: center;
+	}
+	.info-item h3{
+		text-align: center;
+	}
+	.info-item:last-child {
+    	padding-left: 0;
+    }	
+    .photogallery{
+    	box-shadow: none;
+    }
+    .photogallery input:last-child {
+    	margin-left: 0; 
+	}
+    .enroll {
+    	box-shadow: none;
+    }
+    .enroll form{
+    	min-height: 0;
+    }
+    .enroll form input{
+    	display: inline-block;
+    	margin: 0;
+    	width: 50%;
+    }
+	.info-item.enroll input:not([type=submit]){
+		width: 45%;
+	}
+    .info-item.enroll input:not([type=submit]):nth-child(odd){
+    	margin: 0 0 10px;
+    }
+    .info-item.enroll input:not([type=submit]):nth-child(even){
+    	margin: 0 0 10px;
+    }
+    .info input[type=button]{
+		width: 135px;
+	}
+	input[type=button]{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.info-item.enroll input[type=submit] {
+    	position: static;
+	}
+	.contacts{
+		margin-bottom: 10px;
+	}
+	.contacts .button{
+		width: 110px;
+	}
+	footer{
+		line-height: 1rem;
+	}
+	.footer-item{
+		display: inline-block;
+		width: 30%;
+		padding: 5px;
+	}
+	.developer a.button{
+		width: 110px;
+	}
+	.modal-map {
+		width: 70%;
+    	height: 50%;
+    	overflow: hidden;
+	}
+	.modal-map-close{
+		z-index: 9999;
+		right: 0px;
+	}
 }
-
-@media (min-width: 240px) and (max-width: 319px)
