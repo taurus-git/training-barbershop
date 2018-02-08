@@ -691,6 +691,7 @@ footer .developer p{
     	text-align: center;
 		padding-left: 22px;
 		min-width: 100%;
+		
 	}
 	.login-container::before{
 		display: none;
