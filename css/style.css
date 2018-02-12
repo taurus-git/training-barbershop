@@ -50,7 +50,7 @@ body{
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	background-image: url('../images/optimized/background.jpg');
+	background-image: url('../images/background.jpg');
 	background-repeat: no-repeat;
 	background-color: #000;
 	background-position-x: center;
@@ -289,13 +289,13 @@ header input.login-container:hover{
 }
 .login-form input[type="text"]{
 	margin-bottom: 9px;
-	background-image: url(../images/optimized/User.png);
+	background-image: url(../images/user.png);
 	background-repeat: no-repeat;
 	background-position: 95% 50%;
 }
 .login-form input[type="password"]{
 	margin-bottom: 15px;
-	background-image: url(../images/optimized/Locked.png);
+	background-image: url(../images/locked.png);
 	background-repeat: no-repeat;
 	background-position: 95% 50%;
 }
@@ -345,7 +345,7 @@ main{
 	margin-right: auto;
 	margin-bottom: 18px;
 	margin-left: auto;
-	background-image: url("../images/Logo.png");
+	background-image: url("../images/logo.png");
 	background-repeat: no-repeat;
 }
 /* promo-blocks */
@@ -815,6 +815,18 @@ footer .developer p{
 		display: inline-block;
 		width: 30%;
 		padding: 10px;
+	}
+	.footer-item.adress{
+		width: 90%;
+		text-align: center;
+	}
+	.footer-item.social-block{
+		width: 50%;
+		text-align: center;
+	}
+	.footer-item.developer{
+		width: 50%;
+		text-align: center;
 	}
 }	
 @media screen and (max-width: 479px){
