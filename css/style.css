@@ -784,6 +784,13 @@ footer .developer p{
     	-webkit-box-shadow: none;
     	        box-shadow: none;
     }
+    .photogallery div{
+    	overflow: hidden;
+    	left: 0;
+    }
+    .info-item.photogallery input{
+    	width: 110px;
+    }
     .enroll {
     	-webkit-box-shadow: none;
     	        box-shadow: none;
